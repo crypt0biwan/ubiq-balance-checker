@@ -32,10 +32,6 @@ if (ethereum_instance) {
     ethereum_instance.on('chainChanged', () => {
         window.location.reload();
     })
-
-    ethereum_instance.on('accountsChanged', () => {
-        window.location.reload();
-    })
 }
 
 async function getNetwork() {
